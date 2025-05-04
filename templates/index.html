@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Кликер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мой Супер Кликер</h1>
+        </header>
+
+        <main>
+            <section id="game-area">
+                <form method="post"><button id="click-button">Клик!</button></form>
+                <p id="money">Счет: {{ money }}</p>
+            </section>
+
+            <section id="upgrades">
+                <a href="/shop"><h2>Магазин</h2></a>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Мой Кликер</p>
+        </footer>
+    </div>
+</body>
+</html>
+

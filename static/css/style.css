@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Центрирует контент по центру*/
+}
+
+#game-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#click-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#click-button:hover {
+    background-color: #3e8e41;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#upgrades {
+    width: 100%;
+}
+
+#upgrade-list {
+    list-style: none;
+    padding: 0;
+}
+
+.upgrade-button {
+    width: 100%; /* Чтобы кнопки занимали всю ширину контейнера */
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-align: left; /* Выравнивание текста слева */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upgrade-button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/*Адаптивный дизайн*/
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start; /*Выравнивание по верхней границе*/
+    }
+
+    #game-area {
+        width: 40%;
+    }
+
+    #upgrades {
+        width: 40%;
+    }
+}
+
